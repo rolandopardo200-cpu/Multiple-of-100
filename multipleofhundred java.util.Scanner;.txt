@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+/**
+ * Author: Rolando Pardo
+ * Course: Software Engineering
+ */
+public class MultipleOfHundred {
+
+
+    public static boolean isMultipleOfHundred(int number) {
+        return number % 100 == 0;
+    }
+
+ 
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter integer number: ");
+        int number = scanner.nextInt();
+
+        if (isMultipleOfHundred(number)) {
+            System.out.println("multiple of 100");
+        } else {
+            System.out.println("not multiple of 100");
+        }
+
+        scanner.close();
+    }
+}
